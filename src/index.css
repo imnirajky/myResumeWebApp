@@ -1,38 +1,119 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.cart-item {
-    display: inline-flex;
-    margin: 20px 10px;
-}
-
-.cart-item .right-block {
-    margin-top: 15px;
-    padding: 0 20px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.cart-item-action {
-    margin-top: 20px;
-}
-
-.action-icons {
-    margin-top: 17px;
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-}
-
-.action-icons:hover {
-    cursor: pointer;
-}
-
-.cart {
-    display: flex;
-    flex-direction: column;
-}
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .window-UI {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(#FFC2D1, #FCC6D3, #FECBD6, #FCE5EB, #FCE5EB);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .contentBox {
+            display: flex;
+            flex-direction: row;
+            height: 90vh;
+            width: 70vw;
+            margin: auto;
+            border-radius: 2%;
+            overflow: hidden;
+            box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .left {
+            height: 90vh;
+            width: 17vw;
+            background-image: linear-gradient( #f7335e, #ee3d60, #f7496f, #f86383, #FD859E, #fabbc8);
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+            padding: 0px 10px;
+        }
+        
+        .right {
+            height: 90vh;
+            width: 53vw;
+            background-color: rgb(240, 240, 240);
+        }
+        
+        .dpimage {
+            height: 180px;
+            width: 200px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        
+        .skillsection {
+            height: 90vh;
+            width: 53vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px 5px;
+        }
+        
+        .skillsection div {
+            height: 200;
+            width: 300;
+        }
+        
+        .skillsection div img {
+            box-shadow: 5px 4px 6px rgb(182, 181, 181);
+        }
+        
+        .projectsSection {
+            height: 90vh;
+            width: 53vw;
+        }
+        
+        .contactSection {
+            height: 90vh;
+            width: 53vw;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .aside {
+            color: #b1afaf;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: auto;
+        }
+        
+        .aside div {
+            margin-bottom: 50px;
+            margin-left: 300px;
+        }
+        
+        .imageMail {
+            height: 70px;
+            width: 100px;
+            margin-top: 110px;
+        }
+        
+        .projectsSection {
+            height: 90vh;
+            width: 53vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+        }
+        
+        .serverimg {
+            height: 330px;
+            width: 300px;
+            margin-top: -85px;
+        }

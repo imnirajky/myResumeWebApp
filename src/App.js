@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
-import CartItem  from './CartItem';
-import Cart from './Cart';
+import Contact from './Contact';
+import Projects from './Projects';
+import Skills from './Skills';
+import Window from './Window';
+
+
 function App() {
   return (
     <div className="App">
-      <CartItem/>
+      <Window />
+      <Projects/>
     </div>
   );
 }
