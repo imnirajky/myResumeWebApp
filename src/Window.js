@@ -1,26 +1,50 @@
 import React from 'react';
-
+import Home from './Home';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
 class Window extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+         Name : <Home />,
+        }
+    }
+    home = () =>{
+        this.setState({
+            Name: <Home />
+        });
+    }
+
+    skill = () =>{
+        this.setState({
+            Name: <Skills />
+        }); 
+    }
+
+    pro = () => {
+        this.setState({
+            Name: <Projects />
+        });
+    }
+
+    con = () =>{
+        this.setState({
+            Name: <Contact />
+        });
+    }
     render(){
         return(
             <div className="window-UI">
                <div className="contentBox">
                <div className="left">
-                   <div style= {{ marginBottom:20 }}>Home</div>
-                   <div style= {{ marginBottom:20 }}>Skills</div>
-                   <div style= {{ marginBottom:20 }}>Projects</div>
-                   <div style= {{ marginBottom:20 }}>Contact</div>
-                   <div></div>
+                   <div onClick={this.home} style={{color:'#c4c4c4', background:'white'}}>Home</div>
+                   <div onClick={this.skill} style={{color:'#c4c4c4', background:'white'}}>Skills</div>
+                   <div onClick={this.pro} style={{color:'#c4c4c4', background:'white'}}>Projects</div>
+                   <div onClick={this.con} style={{color:'#c4c4c4', background:'white'}}>Contact</div>
                </div>
                <div className="right">
-               <div className="dpimage">
-               <img style={styles.dp} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t1.6435-9/200459388_153025663485559_3059448619789140436_n.jpg?_nc_cat=104&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=8NIhM1iPTNMAX_l2n7s&_nc_ht=scontent.fpat3-2.fna&oh=eee9ba91bd348948f53368b4d6d02ba2&oe=613580CE" alt="dp" />
-               </div>
-               <div style={styles.intro}>
-               Hi, I am Niraj. A 3rd Year UnderGrad Student.
-               <br />
-               Currently, Pursuing my Bachelors in Electrical Engineering.
-               </div>
+                   { this.state.Name }
                </div>
                </div>
             </div>
@@ -28,20 +52,5 @@ class Window extends React.Component{
     }
 }
 
-const styles = {
-    dp:{
-        height: 200,
-        width:210,
-        borderRadius: "50%",
-    },
-    intro:{
-        fontSize: 20,
-        fontWeight:700,
-        fontFamily:'sans-serif',
-        margin: 60,
-        lineHeight:1.5
-
-    }
-}   
 
 export default Window;
