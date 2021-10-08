@@ -6,7 +6,7 @@ class Home extends React.Component{
         return(
             <div className="homeDiv">
                <div className="dpimage">
-               <img style={styles.dp} src="https://scontent.fpat3-2.fna.fbcdn.net/v/t1.6435-9/200459388_153025663485559_3059448619789140436_n.jpg?_nc_cat=104&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=8NIhM1iPTNMAX_l2n7s&_nc_ht=scontent.fpat3-2.fna&oh=eee9ba91bd348948f53368b4d6d02ba2&oe=613580CE" alt="dp" />
+               <img style={styles.dp} src="https://instagram.fpat3-3.fna.fbcdn.net/v/t51.2885-19/s320x320/241703313_337507151453962_6090442839448304543_n.jpg?_nc_ht=instagram.fpat3-3.fna.fbcdn.net&_nc_ohc=ftF_FFrN4A4AX9__0a8&edm=ABfd0MgBAAAA&ccb=7-4&oh=dd8f9513c8fe31eecfff7dd02a8066f7&oe=6167C9A5&_nc_sid=7bff83" alt="dp" />
                </div>
                <div style={styles.intro}>
                Hi, I am Niraj. A 3rd Year UnderGrad Student.
